@@ -59,4 +59,11 @@ gcloud builds submit --project ${PJID} \
 _PJID_SRC=${PJID},_PJID_TGT=${PJID},_DS_CDC=${DS_RAW},_DS_RAW=${DS_CDC},_DS_REPORTING=${DS_REPORTING},_DS_MODELS=${DS_MODELS},_GCS_BUCKET=${BUCKET_LOGS},_TGT_BUCKET=${BUCKET_DAGS},_TEST_DATA=true,_DEPLOY_CDC=true,_GEN_EXT=true,_DEPLOY_SAP=true,_DEPLOY_SFDC=false
 ```
 
+## Expected results
 
+| dataset | objects |
+| --- | --- |
+| CORTEX_SAP_RAW_LANDING | 115 tables (e.g. `adr6`, `adrc`, `but000`, ...) | 
+| CORTEX_SAP_CDC_PROCESSED | Exactly the same tables as in CORTEX_SAP_RAW_LANDING | 
+| CORTEX_SAP_REPORTING | 82 tables (e.g. `AccountingDocuments`, `AddressesMD`, `Billing`, ...) | 
+| CORTEX_SAP_ML | 1 model : `clustering_nmodel` | 
