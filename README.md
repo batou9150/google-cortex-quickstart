@@ -41,22 +41,22 @@ bq --location=US mk --dataset ${PJID}:${DS_MODELS}
 ```
 
 
-## Check & Run
+## Check
 
 ```sh
-cd mando-checker
+cd ~/mando-checker
 
 gcloud builds submit \
    --project ${PJID} \
    --substitutions _DEPLOY_PJID=${PJID},_DEPLOY_BUCKET_NAME=${BUCKET_DAGS},_LOG_BUCKET_NAME=${BUCKET_LOGS} .
+```
 
-cd ..
+## Run
 
-cd cortex-data-foundation
+```sh
+cd ~/cortex-data-foundation
 
 gcloud builds submit --project ${PJID} \
 --substitutions \
 _PJID_SRC=${PJID},_PJID_TGT=${PJID},_DS_CDC=${DS_RAW},_DS_RAW=${DS_CDC},_DS_REPORTING=${DS_REPORTING},_DS_MODELS=${DS_MODELS},_GCS_BUCKET=${BUCKET_LOGS},_TGT_BUCKET=${BUCKET_DAGS},_TEST_DATA=true,_DEPLOY_CDC=true,_GEN_EXT=true,_DEPLOY_SAP=true,_DEPLOY_SFDC=true
 ```
-
-
