@@ -39,7 +39,7 @@ bq --location=US mk --dataset ${PJID}:${DS_MODELS}
 ```
 
 
-## Check & Run
+## Check
 
 ```sh
 cd ~/mando-checker
