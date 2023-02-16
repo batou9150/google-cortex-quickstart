@@ -59,4 +59,9 @@ gcloud builds submit --project ${PJID} \
 _PJID_SRC=${PJID},_PJID_TGT=${PJID},_DS_CDC=${DS_RAW},_DS_RAW=${DS_CDC},_DS_REPORTING=${DS_REPORTING},_DS_MODELS=${DS_MODELS},_GCS_BUCKET=${BUCKET_LOGS},_TGT_BUCKET=${BUCKET_DAGS},_TEST_DATA=true,_DEPLOY_CDC=true,_GEN_EXT=true,_DEPLOY_SAP=false,_DEPLOY_SFDC=true
 ```
 
+## Looker
+
+Import Looker Dashboards for Salesforce from [block-cortex-sap](https://github.com/looker-open-source/block-cortex-salesforce).
+
+_Instructions for deploying the pre-built Looker blocks can be found [here](https://cloud.google.com/looker/docs/marketplace#installing_a_tool_from_a_git_url)._
 

@@ -67,3 +67,9 @@ _PJID_SRC=${PJID},_PJID_TGT=${PJID},_DS_CDC=${DS_RAW},_DS_RAW=${DS_CDC},_DS_REPO
 | CORTEX_SAP_CDC_PROCESSED | Exactly the same tables as in CORTEX_SAP_RAW_LANDING | 
 | CORTEX_SAP_REPORTING | 82 tables (e.g. `AccountingDocuments`, `AddressesMD`, `Billing`, ...) | 
 | CORTEX_SAP_ML | 1 model : `clustering_nmodel` | 
+
+## Looker
+
+Import [Looker Dashboards for SAP](https://marketplace.looker.com/marketplace/detail/cortex-sap-operational) from [block-cortex-sap](https://github.com/looker-open-source/block-cortex-sap).
+
+_Instructions for deploying the pre-built Looker blocks can be found [here](https://cloud.google.com/looker/docs/marketplace#installing_a_tool_from_a_git_url)._
