@@ -48,7 +48,7 @@ cd ~/mando-checker
 
 gcloud builds submit \
    --project ${PJID} \
-   --substitutions _DEPLOY_PJID=${PJID},_DEPLOY_BUCKET_NAME=${BUCKET_DAGS},_LOG_BUCKET_NAME=${BUCKET_LOGS} .
+   --substitutions _DEPLOY_PROJECT_ID=${PJID},_DEPLOY_BUCKET_NAME=${BUCKET_DAGS},_LOG_BUCKET_NAME=${BUCKET_LOGS} .
 ```
 
 ## Run
