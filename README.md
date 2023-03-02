@@ -65,4 +65,4 @@ _PJID_SRC=${PJID},_PJID_TGT=${PJID},_DS_RAW=${DS_RAW},_DS_CDC=${DS_CDC},_DS_REPO
 
 | SAP | Salesforce |
 | --- | --- |
-| [<img src="cortex-looker-sap-block.png" alt="Cortex Looker SAP Block" width="200" />](cortex-quickstart-sap.md#looker) | [<img src="cortex-looker-salesforce-block.png" alt="Cortex Looker Salesforce Block" width="200" />](cortex-quickstart-salesforce.md#looker) |
+| [<img src="cortex-looker-sap-block.png" alt="Cortex Looker SAP Block" width="300" />](cortex-quickstart-sap.md#looker) | [<img src="cortex-looker-salesforce-block.png" alt="Cortex Looker Salesforce Block" width="300" />](cortex-quickstart-salesforce.md#looker) |

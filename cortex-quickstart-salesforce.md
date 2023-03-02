@@ -65,3 +65,9 @@ Import Looker Dashboards for Salesforce from [block-cortex-sap](https://github.c
 
 _Instructions for deploying the pre-built Looker blocks can be found [here](https://cloud.google.com/looker/docs/marketplace#installing_a_tool_from_a_git_url)._
 
+<img src="cortex-looker-salesforce-accounts_with_cases.png" alt="Cortex Looker Salesforce Accounts with cases" width="300" />
+<img src="cortex-looker-salesforce-case_overview_trends.png" alt="Cortex Looker Salesforce Case Overview & Trends" width="300" />
+<img src="cortex-looker-salesforce-case_management_resolution.png" alt="Cortex Looker Salesforce Case Management & Resolution" width="300" />
+<img src="cortex-looker-salesforce-leads_capture_conversion.png" alt="Cortex Looker Salesforce Leads Capture & Conversion" width="300" />
+<img src="cortex-looker-salesforce-opportunity_trends_pipeline.png" alt="Cortex Looker Salesforce Opportunity Trends & Pipeline" width="300" />
+<img src="cortex-looker-salesforce-sales_activities_engagement.png" alt="Cortex Looker Salesforce Sales Activities & Engagement" width="300" />
