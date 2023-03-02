@@ -60,3 +60,9 @@ gcloud builds submit --project ${PJID} \
 --substitutions \
 _PJID_SRC=${PJID},_PJID_TGT=${PJID},_DS_RAW=${DS_RAW},_DS_CDC=${DS_CDC},_DS_REPORTING=${DS_REPORTING},_DS_MODELS=${DS_MODELS},_GCS_BUCKET=${BUCKET_LOGS},_TGT_BUCKET=${BUCKET_DAGS},_TEST_DATA=true,_DEPLOY_CDC=true,_GEN_EXT=true,_DEPLOY_SAP=true,_DEPLOY_SFDC=true
 ```
+
+## Looker
+
+| SAP | Salesforce |
+| --- | --- |
+| [<img src="cortex-looker-sap-block.png" alt="Cortex Looker SAP Block" width="200" />](cortex-quickstart-sap.md#looker) | [<img src="cortex-looker-salesforce-block.png" alt="Cortex Looker Salesforce Block" width="200" />](cortex-quickstart-salesforce.md#looker) |
