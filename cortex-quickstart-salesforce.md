@@ -3,7 +3,7 @@
 
 Running the following commands in [Cloud Shell](https://cloud.google.com/shell) will:
 - create 2 buckets
-- create 4 BigQuery Datasets
+- create 3 BigQuery Datasets
 - check permissions (you should have "BigQuery Admin" & "Storage Object Admin")
 - generate data for Salesforce
 
@@ -16,7 +16,6 @@ export BUCKET_DAGS=${PJID}-cortex-sfdc-dags
 export DS_RAW=CORTEX_SFDC_RAW_LANDING
 export DS_CDC=CORTEX_SFDC_CDC_PROCESSED
 export DS_REPORTING=CORTEX_SFDC_REPORTING
-export DS_MODELS=CORTEX_SFDC_ML
 ```
 
 ## Cloning repos
@@ -35,7 +34,6 @@ gcloud storage buckets create gs://${BUCKET_DAGS}
 bq --location=US mk --dataset ${PJID}:${DS_RAW}
 bq --location=US mk --dataset ${PJID}:${DS_CDC}
 bq --location=US mk --dataset ${PJID}:${DS_REPORTING}
-bq --location=US mk --dataset ${PJID}:${DS_MODELS}
 ```
 
 
@@ -56,7 +54,7 @@ cd ~/cortex-data-foundation
 
 gcloud builds submit --project ${PJID} \
 --substitutions \
-_PJID_SRC=${PJID},_PJID_TGT=${PJID},_DS_RAW=${DS_RAW},_DS_CDC=${DS_CDC},_DS_REPORTING=${DS_REPORTING},_DS_MODELS=${DS_MODELS},_GCS_BUCKET=${BUCKET_LOGS},_TGT_BUCKET=${BUCKET_DAGS},_TEST_DATA=true,_DEPLOY_CDC=true,_GEN_EXT=true,_DEPLOY_SAP=false,_DEPLOY_SFDC=true
+_PJID_SRC=${PJID},_PJID_TGT=${PJID},_DS_RAW=${DS_RAW},_DS_CDC=${DS_CDC},_DS_REPORTING=${DS_REPORTING},_DS_MODELS=none,_GCS_BUCKET=${BUCKET_LOGS},_TGT_BUCKET=${BUCKET_DAGS},_TEST_DATA=true,_DEPLOY_CDC=true,_GEN_EXT=true,_DEPLOY_SAP=false,_DEPLOY_SFDC=true
 ```
 
 ## Looker
